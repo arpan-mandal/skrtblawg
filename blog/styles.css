@@ -1,0 +1,150 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #121212; /* Dark background */
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #333;
+}
+
+h1 {
+    color: #e91e63; /* Pink highlight for header */
+    font-size: 3rem;
+    margin: 0;
+}
+
+p {
+    color: #aaa;
+    font-size: 1.2rem;
+}
+
+/* Main Content Styling */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Article Cards */
+article {
+    background: #2a2a2a;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Article Titles */
+article h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.8rem;
+}
+
+article h2 a {
+    color: #03a9f4;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+article h2 a:hover {
+    color: #e91e63;
+    text-decoration: underline;
+}
+
+/* Back Link */
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #03a9f4;
+    transition: color 0.3s ease-in-out;
+}
+
+.back-link:hover {
+    color: #e91e63;
+}
+
+/* Password Container */
+#password-container {
+    text-align: center;
+    margin-top: 15%;
+}
+
+#password-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#password-input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #333;
+    border-radius: 4px;
+    width: 250px;
+    color: #fff;
+    background: #1e1e1e;
+}
+
+#password-input:focus {
+    outline: none;
+    border-color: #03a9f4;
+}
+
+#password-submit {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #03a9f4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+#password-submit:hover {
+    background: #e91e63;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Error Message */
+#password-error {
+    color: #e91e63;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding: 15px;
+    }
+
+    article h2 {
+        font-size: 1.5rem;
+    }
+
+    #password-container h1 {
+        font-size: 2rem;
+    }
+}
